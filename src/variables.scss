@@ -1,0 +1,43 @@
+// Paleta de colores
+$color-primary: #0d6efd; // Azul
+$color-secondary: #6610f2; // Violeta
+$color-success: #198754; // Verde
+$color-danger: #dc3545; // Rojo
+$color-warning: #ffc107; // Amarillo
+$color-info: #0dcaf0; // Cian
+$color-light: #f8f9fa; // Blanco suave
+$color-dark: #212529; // Negro suave
+
+// Colores de texto
+$color-text-primary: #212529; // Negro suave
+$color-text-secondary: #6c757d; // Gris oscuro
+$color-text-light: #f8f9fa; // Blanco suave
+$color-text-pink-hover: rgb(227, 28, 121);
+
+// Colores de fondo
+$color-bg-primary: rgb(0, 0, 50);
+$color-bg-card: rgb(0, 0, 44);
+
+// Colores de borde
+$color-border-primary: #ced4da; // Gris claro
+$color-border-secondary: #6c757d; // Gris oscuro
+
+// Fuente letra
+$font-family: 'Signika', sans-serif;
+
+$background-gradient: linear-gradient(
+  86.3deg,
+  rgb(247, 0, 255) 3.6%,
+  rgb(68, 8, 65) 87.6%
+);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: $color-bg-primary;
+}

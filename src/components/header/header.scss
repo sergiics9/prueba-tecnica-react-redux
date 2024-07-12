@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 12rem;
+  font-family: $font-family;
+  background-color: $color-bg-primary;
+  box-shadow: 10px -60px 34px -67px rgba(255, 255, 255, 1) inset;
+  -webkit-box-shadow: 10px -60px 34px -67px rgba(255, 255, 255, 1) inset;
+  -moz-box-shadow: 10px -60px 34px -67px rgba(255, 255, 255, 1) inset;
+
+  &__logged-user {
+    .header__welcome {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .header__name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-text-pink-hover;
+    }
+  }
+
+  &__login-buttons {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .header__button {
+    color: white;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.6;
+
+    &:hover {
+      color: $color-text-pink-hover;
+      transform: scale(1.05);
+    }
+  }
+}

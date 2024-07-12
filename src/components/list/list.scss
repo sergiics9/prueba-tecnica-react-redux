@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  gap: 2rem;
+  color: white;
+  max-width: 100%;
+  min-height: 80vh;
+  display: grid;
+  width: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  list-style: none;
+  font-family: $font-family;
+  gap: 2rem;
+  color: white;
+}
+
+.pagination__link {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Karla';
+  border: 1px solid $color-text-pink-hover;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: $font-family;
+}
+
+.pagination__link--active {
+  border-color: $color-text-pink-hover;
+  color: $color-text-pink-hover;
+}
+
+.pagination__link--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination__link:hover:not(.pagination__link--disabled) {
+  border-color: $color-text-pink-hover;
+  color: $color-text-pink-hover;
+}

@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.filter-container {
+  background-color: $color-bg-primary;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  color: $color-text-pink-hover;
+  font-family: $font-family;
+
+  &__select {
+    font-family: $font-family;
+    border: 1px solid $color-text-pink-hover;
+    border-radius: 8px;
+    color: white;
+    background-color: $color-bg-card;
+    padding: 0.6rem;
+    width: 100px;
+    font-size: 1rem;
+  }
+
+  &__option {
+    font-size: 1rem;
+    color: $color-text-pink-hover;
+    background-color: $color-bg-card;
+  }
+}
