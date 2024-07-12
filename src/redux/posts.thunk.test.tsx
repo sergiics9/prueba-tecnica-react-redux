@@ -2,10 +2,8 @@ import configureMockStore from 'redux-mock-store';
 import { loadPostsThunk, deletePostThunk } from './posts.thunk';
 import { ApiRepo } from '../services/api.repo';
 import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
-import thunk from 'redux-thunk';
 
-const middlewaress = [thunk];
-const mockStore = configureMockStore(middlewaress);
+const mockStore = configureMockStore();
 
 describe('posts thunks', () => {
   let store: ReturnType<typeof mockStore> & {
